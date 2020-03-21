@@ -9,7 +9,7 @@
             <div class="bottom clearfix">
               <time class="time"></time>
               <router-link class="mui-tab-item" :to="{path:'/course/add/base'}">
-                  <el-button type="text" class="button" >新增课程</el-button>
+                <el-button type="text" class="button" >新增课程</el-button>
               </router-link>
             </div>
           </div>
@@ -59,13 +59,13 @@
             name:'test02',
             pic:''
           }
-          ],
+        ],
         sels: [],//列表选中列
         imgUrl:sysConfig.imgUrl
       }
     },
     methods: {
-        //分页方法
+      //分页方法
       handleCurrentChange(val) {
         this.page = val;
         this.getCourse();
